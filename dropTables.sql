@@ -1,0 +1,129 @@
+BEGIN
+    EXECUTE IMMEDIATE 'DROP TABLE Participants cascade constraints';
+EXCEPTION
+    WHEN OTHERS THEN NULL;
+END;
+/
+
+
+BEGIN
+    EXECUTE IMMEDIATE 'DROP TABLE User_Events cascade constraints';
+EXCEPTION
+    WHEN OTHERS THEN NULL;
+END;
+/
+
+BEGIN 
+    EXECUTE IMMEDIATE 'DROP TABLE User_Current_Cities cascade constraints';
+EXCEPTION
+    WHEN OTHERS THEN NULL;
+END;
+/
+
+BEGIN 
+    EXECUTE IMMEDIATE 'DROP TABLE User_Hometown_Cities cascade constraints';
+EXCEPTION
+    WHEN OTHERS THEN NULL;
+END;
+/
+
+BEGIN 
+    EXECUTE IMMEDIATE 'DROP TABLE Cities cascade constraints';
+EXCEPTION
+    WHEN OTHERS THEN NULL;
+END;
+/
+
+BEGIN 
+    EXECUTE IMMEDIATE 'DROP TABLE Friends cascade constraints';
+EXCEPTION
+    WHEN OTHERS THEN NULL;
+END;
+/
+
+BEGIN
+    EXECUTE IMMEDIATE 'DROP TABLE Messages cascade constraints';
+EXCEPTION
+    WHEN OTHERS THEN NULL;
+END;
+/
+
+BEGIN
+    EXECUTE IMMEDIATE 'DROP TABLE Programs cascade constraints';
+EXCEPTION
+    WHEN OTHERS THEN NULL;
+END;
+/
+
+BEGIN
+    EXECUTE IMMEDIATE 'DROP TABLE Education cascade constraints';
+EXCEPTION
+    WHEN OTHERS THEN NULL;
+END;
+/
+
+BEGIN
+    EXECUTE IMMEDIATE 'DROP TABLE Tags cascade constraints';
+EXCEPTION
+    WHEN OTHERS THEN NULL;
+END;
+/
+
+BEGIN
+    EXECUTE IMMEDIATE 'DROP TABLE Photos cascade constraints';
+EXCEPTION
+    WHEN OTHERS THEN NULL;
+END;
+/
+
+BEGIN
+    EXECUTE IMMEDIATE 'DROP TABLE Albums cascade constraints';
+EXCEPTION
+    WHEN OTHERS THEN NULL;
+END;
+/
+
+-- Drop Triggers
+
+BEGIN 
+    EXECUTE IMMEDIATE 'DROP TRIGGER Friends.Order_Friend_Pairs';
+EXCEPTION
+    WHEN OTHERS THEN NULL;
+END;
+/
+
+BEGIN 
+    EXECUTE IMMEDIATE 'DROP TABLE Users cascade constraints';
+EXCEPTION
+    WHEN OTHERS THEN NULL;
+END;
+/
+
+BEGIN 
+    EXECUTE IMMEDIATE 'DROP Sequence create_city_id';
+EXCEPTION
+    WHEN OTHERS THEN NULL;
+END;
+/
+
+BEGIN 
+    EXECUTE IMMEDIATE 'DROP Trigger city_id_trigger';
+EXCEPTION
+    WHEN OTHERS THEN NULL;
+END;
+/
+
+BEGIN 
+    EXECUTE IMMEDIATE 'DROP Sequence create_program_id';
+EXCEPTION
+    WHEN OTHERS THEN NULL;
+END;
+/
+
+BEGIN 
+    EXECUTE IMMEDIATE 'DROP Trigger program_id_trigger';
+EXCEPTION
+    WHEN OTHERS THEN NULL;
+END;
+/
+
